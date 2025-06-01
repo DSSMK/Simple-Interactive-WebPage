@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My JavaScript Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body onload="welcomeMessage()">
+  <h1>My JavaScript Practice</h1>
+
+  <p id="myParagraph">This is simple interactive webpage.</p>
+  <button onclick="changeParagraph()">Change Paragraph</button>
+
+  <h2>Toggle Light</h2>
+  <img id="bulbImage" src="images/bulb-off.png" alt="Bulb" width="100">
+  <br>
+  <button onclick="turnOn()">Turn ON</button>
+  <button onclick="turnOff()">Turn OFF</button>
+
+  <h2>Show/Hide Paragraph</h2>
+  <button onclick="hideParagraph()">Hide</button>
+  <button onclick="showParagraph()">Show</button>
+
+  <h2>Display Name</h2>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="displayName()">Show Name</button>
+  <p id="displayNameResult"></p>
+
+  <h2>Variables Display</h2>
+  <div id="variablesOutput"></div>
+
+  <h2>Add Numbers</h2>
+  <input type="number" id="num1" placeholder="First Number">
+  <input type="number" id="num2" placeholder="Second Number">
+  <button onclick="addNumbers()">Add</button>
+  <p id="calcResult"></p>
+</body>
+</html>
